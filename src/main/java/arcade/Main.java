@@ -1,5 +1,7 @@
 package arcade;
 
+import arcade.jogos.Forca;
+
 import java.util.Scanner;
 
 public class Main {
@@ -12,7 +14,7 @@ public class Main {
             System.out.println("\n=================================");
             System.out.println("             ARCADE             ");
             System.out.println("=================================");
-            System.out.println("1 - ");
+            System.out.println("1 - Jogo da Forca");
             System.out.println("2 - ");
             System.out.println("0 - Sair");
             System.out.print("Escolha uma opção: ");
@@ -24,6 +26,7 @@ public class Main {
 
                 switch (opcao) {
                     case 1:
+                        Forca.jogar(scanner);
                         break;
                     case 2:
                         break;

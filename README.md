@@ -8,12 +8,15 @@ Projeto desenvolvido em **Java** para a disciplina de **Projeto de Programação
 
 ```
 Arcade/
-├── src/                      # Código-fonte do projeto
-│   └── main/                 # Código principal da aplicação
-│       └── java/             # Arquivos de código Java
-│           ├── Main.java     # Menu principal e controle de fluxo do sistema
-├── .gitignore                # Arquivos e pastas ignorados pelo Git
-└── README.md                 # Descrição e documentação do projeto
+├── src/                                # Código-fonte do projeto
+│   └── main/
+│       └── java/                       # Arquivos de código Java
+│           ├── Main.java               # Menu principal e controle de fluxo do sistema
+│           └── jogos/                  # Pacote contendo as lógicas e recursos dos jogos
+│               ├── Forca.java          # Implementação e lógica do Jogo da Forca
+│               └── palavras.txt        # Banco de dados de palavras para a Forca
+├── .gitignore                          # Arquivos e pastas ignorados pelo Git
+└── README.md                           # Descrição e documentação do projeto
 ```
 
 ---
@@ -27,5 +30,5 @@ Arcade/
 ---
 
 🕹️ Jogos Incluídos
-* **Jogo da Forca:** Adivinhação de palavras com leitura dinâmica a partir de um arquivo `.txt` e sanitização de dados.
+* **Jogo da Forca:** Adivinhação de palavras com leitura dinâmica a partir de um arquivo `.txt`.
 * **Demais Jogos**

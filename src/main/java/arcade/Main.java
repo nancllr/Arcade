@@ -1,0 +1,44 @@
+package arcade;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        boolean executando = true;
+
+        while (executando) {
+            System.out.println("\n=================================");
+            System.out.println("             ARCADE             ");
+            System.out.println("=================================");
+            System.out.println("1 - ");
+            System.out.println("2 - ");
+            System.out.println("0 - Sair");
+            System.out.print("Escolha uma opção: ");
+
+            String entrada = scanner.nextLine().trim();
+
+            try {
+                int opcao = Integer.parseInt(entrada);
+
+                switch (opcao) {
+                    case 1:
+                        break;
+                    case 2:
+                        break;
+                    case 0:
+                        System.out.println("\nObrigado por jogar! Até à próxima.");
+                        executando = false;
+                        break;
+                    default:
+                        System.out.println("Opção inválida! Escolha um número do menu.");
+                }
+            } catch (NumberFormatException e) {
+                System.out.println("Digite apenas números inteiros!");
+            }
+        }
+
+        scanner.close();
+    }
+}

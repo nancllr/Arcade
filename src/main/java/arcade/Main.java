@@ -17,6 +17,7 @@ public class Main {
             System.out.println("1 - Jogo da Forca");
             System.out.println("2 - Adivinhe o Número");
             System.out.println("3 - Tetris");
+            System.out.println("4 - Jogo da Velha");
             System.out.println("0 - Sair");
             System.out.print("Escolha uma opção: ");
 
@@ -34,6 +35,10 @@ public class Main {
                         break;
                     case 3:
                         Tetris.jogar();
+                        break;
+                    case 4:
+                        JogoDaVelha jogo = new JogoDaVelha();
+                        jogo.jogar();
                         break;
                     case 0:
                         System.out.println("\nObrigado por jogar! Até à próxima.");

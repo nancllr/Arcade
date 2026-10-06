@@ -1,8 +1,6 @@
 package arcade;
 
-import arcade.jogos.Forca;
-import arcade.jogos.AdivinheNumero;
-import arcade.jogos.Contexto;
+import arcade.jogos.*;
 
 import java.util.Scanner;
 
@@ -19,6 +17,7 @@ public class Main {
             System.out.println("1 - Jogo da Forca");
             System.out.println("2 - Adivinhe o Número");
             System.out.println("3 - Contexto");
+            System.out.println("4 - Tetris");
             System.out.println("0 - Sair");
             System.out.print("Escolha uma opção: ");
 
@@ -36,6 +35,9 @@ public class Main {
                         break;
                     case 3:
                         Contexto.jogar(scanner);
+                        break;
+                    case 4:
+                        Tetris.jogar();
                         break;
                     case 0:
                         System.out.println("\nObrigado por jogar! Até à próxima.");
